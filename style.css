@@ -6,7 +6,10 @@ h1 {
 }
 
 body {
-  background-color: #e6e6ff;
+  background-color: #e2bab1;
+  background-image: linear-gradient(to top, #dda6b9, #efa18a);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .container {
