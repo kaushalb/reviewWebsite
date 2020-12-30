@@ -1,12 +1,12 @@
 $(document).ready(() => {
     $('#searchBar').on('submit', (e) => {
         console.log($('#searchText').val());
-        getMovie($('#searchText').val());
+        getMovies($('#searchText').val());
         e.preventDefault();
     })
 });
 
-function getMovie(searchText){
+function getMovies(searchText){
     axios.get('http://www.omdbapi.com/?apikey=64d7fa7'+'&s='+searchText).then((response) => {
         console.log(response);
 
@@ -26,6 +26,21 @@ function getMovie(searchText){
 
         $('#movies').html(output);
 
+    }).catch((err) => {
+        console.log(err);
+    });
+}
+
+function movieSelected(id){
+    sessionStorage.setItem('movieId', id);
+    window.location = 'selection.html';
+    return false;
+}
+
+function getMovie(){
+    let movieId = sessionStorage.getItem('movieId');
+    axios.get('http://www.omdbapi.com/?apikey=64d7fa7'+'&i='+movieId).then((response) => {
+        console.log(response);
     }).catch((err) => {
         console.log(err);
     });
