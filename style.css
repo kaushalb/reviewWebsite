@@ -1,15 +1,6 @@
 h1 {
   color: black;
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-body {
-  background-color: #e2bab1;
-  background-image: linear-gradient(to top, #dda6b9, #efa18a);
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 .container {
@@ -17,6 +8,9 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   text-align: center;
+}
+body {
+  background-color: antiquewhite;
 }
 
 * {
@@ -29,5 +23,5 @@ body {
   border-radius: 3px;
   border: 1px solid #eaeaea;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 16px;
 }
