@@ -61,7 +61,7 @@ function getMovie(){
                     </ul>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="well">
                     <h3>Plot</h3>
