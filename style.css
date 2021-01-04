@@ -1,12 +1,12 @@
-h1 {
-  color: black;
+h5 {
+  color: white;
   text-align: center;
 }
-
+/*
 .navbar {
   height: 80px;
   align-items: center;
-}
+}*/
 
 .container {
   padding: 40px;
@@ -14,8 +14,16 @@ h1 {
   max-width: 1000px;
   text-align: center;
 }
+/*
 body {
   background-color: antiquewhite;
+}*/
+
+.page {
+  display: none;
+}
+.page-active {
+  display: block;
 }
 
 * {
@@ -34,7 +42,7 @@ body {
   }
 
   #movies .col-md-3 img {
-    height: 290px;
+    height: 240px;
   }
 }
 
